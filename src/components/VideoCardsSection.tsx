@@ -102,7 +102,7 @@ const VideoCardsSection = () => {
   }
 
   return (
-    <section className="py-16 px-4">
+    <section className="pt-4 pb-16 px-4">
       <div className="max-w-7xl mx-auto">
         <div className="flex gap-3 h-[400px]">
           {videoSources.map((src, index) => (
