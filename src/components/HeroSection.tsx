@@ -12,7 +12,7 @@ const HeroSection = () => {
         >
           <div className="w-2 h-2 rounded-full bg-neon animate-pulse"></div>
           <span className="text-sm text-muted-foreground">
-            Introducing New Gen AI Powered Automation Tool
+            Discover Premium Cinematic Video Backgrounds
           </span>
         </div>
 
@@ -28,8 +28,8 @@ const HeroSection = () => {
         <p 
           className="text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto mb-12 leading-relaxed animate-in fade-in slide-in-from-bottom-4 duration-1000 delay-300"
         >
-          Tool that turns bold ambitions into seamless, intelligent workflows that 
-          capture attention and drive real business growth.
+          Stunning collection of premium motion backgrounds designed to elevate 
+          your projects with captivating cinematic visual experiences.
         </p>
 
         {/* CTA Buttons */}
