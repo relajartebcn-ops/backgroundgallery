@@ -38,8 +38,8 @@ All colors MUST be HSL.
 
     --radius: 0.75rem;
 
-    --neon: 55 100% 65%;
-    --neon-glow: 55 100% 75%;
+    --neon: 55 80% 50%;
+    --neon-glow: 55 80% 60%;
 
     --sidebar-background: 0 0% 0%;
     --sidebar-foreground: 0 0% 100%;
