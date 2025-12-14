@@ -43,6 +43,7 @@ const HeroSection = () => {
             initial={{ filter: 'blur(12px)', opacity: 0, y: 30 }}
             animate={{ filter: 'blur(0px)', opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.18, ease: smoothEase }}
+            className="font-playfair italic font-medium"
           >
             <GradientText animationSpeed={5}>Background</GradientText>
           </motion.span>
