@@ -2,12 +2,12 @@ import { useEffect, useRef, useState } from "react";
 import Hls from "hls.js";
 
 const videoSources = [
-  "https://customer-o2lq6cj0uapk3kwa.cloudflarestream.com/3ca2cbb6fb0bddae0e30f6f71ca20d90/manifest/video.m3u8",
-  "https://customer-o2lq6cj0uapk3kwa.cloudflarestream.com/3ca2cbb6fb0bddae0e30f6f71ca20d90/manifest/video.m3u8",
-  "https://customer-o2lq6cj0uapk3kwa.cloudflarestream.com/3ca2cbb6fb0bddae0e30f6f71ca20d90/manifest/video.m3u8",
-  "https://customer-o2lq6cj0uapk3kwa.cloudflarestream.com/3ca2cbb6fb0bddae0e30f6f71ca20d90/manifest/video.m3u8",
-  "https://customer-o2lq6cj0uapk3kwa.cloudflarestream.com/3ca2cbb6fb0bddae0e30f6f71ca20d90/manifest/video.m3u8",
-  "https://customer-o2lq6cj0uapk3kwa.cloudflarestream.com/3ca2cbb6fb0bddae0e30f6f71ca20d90/manifest/video.m3u8",
+  "https://customer-cbeadsgr09pnsezs.cloudflarestream.com/0f2f7fe2f6a205894f4e9747e26a7341/manifest/video.m3u8",
+  "https://customer-cbeadsgr09pnsezs.cloudflarestream.com/408ad52e3f15bc8f01ae69d194a8cf3a/manifest/video.m3u8",
+  "https://customer-cbeadsgr09pnsezs.cloudflarestream.com/dd17599dfa77f41517133fa7a4967535/manifest/video.m3u8",
+  "https://customer-cbeadsgr09pnsezs.cloudflarestream.com/df176a2fb2ea2b64bd21ae1c10d3af6a/manifest/video.m3u8",
+  "https://customer-cbeadsgr09pnsezs.cloudflarestream.com/c5a2cbf9bc2b40ae840525adb59ecb53/manifest/video.m3u8",
+  "https://customer-cbeadsgr09pnsezs.cloudflarestream.com/0334468bdc3b2ef521fa863fa34e69df/manifest/video.m3u8",
 ];
 
 interface VideoCardProps {
