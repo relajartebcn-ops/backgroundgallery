@@ -2,6 +2,7 @@ import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
 import { motion } from "motion/react";
 import BlurText from "./BlurText";
+import GradientText from "./GradientText";
 
 const smoothEase = [0.25, 0.1, 0.25, 1] as const;
 
@@ -24,19 +25,41 @@ const HeroSection = () => {
         </motion.div>
 
         {/* Hero Headline */}
-        <BlurText
-          text="Ultimate Motion Background Gallery"
-          delay={60}
-          className="text-5xl md:text-7xl lg:text-8xl font-bold text-foreground mb-6 leading-tight"
-          animateBy="words"
-          direction="bottom"
-          stepDuration={0.5}
-          animationFrom={{ filter: 'blur(12px)', opacity: 0, y: 30 }}
-          animationTo={[
-            { filter: 'blur(4px)', opacity: 0.7, y: 8 },
-            { filter: 'blur(0px)', opacity: 1, y: 0 }
-          ]}
-        />
+        <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold text-foreground mb-6 leading-tight flex flex-wrap items-center justify-center gap-x-[0.3em]">
+          <BlurText
+            text="Ultimate Motion"
+            delay={60}
+            className="inline"
+            animateBy="words"
+            direction="bottom"
+            stepDuration={0.5}
+            animationFrom={{ filter: 'blur(12px)', opacity: 0, y: 30 }}
+            animationTo={[
+              { filter: 'blur(4px)', opacity: 0.7, y: 8 },
+              { filter: 'blur(0px)', opacity: 1, y: 0 }
+            ]}
+          />
+          <motion.span
+            initial={{ filter: 'blur(12px)', opacity: 0, y: 30 }}
+            animate={{ filter: 'blur(0px)', opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: 0.18, ease: smoothEase }}
+          >
+            <GradientText animationSpeed={5}>Background</GradientText>
+          </motion.span>
+          <BlurText
+            text="Gallery"
+            delay={60}
+            className="inline"
+            animateBy="words"
+            direction="bottom"
+            stepDuration={0.5}
+            animationFrom={{ filter: 'blur(12px)', opacity: 0, y: 30 }}
+            animationTo={[
+              { filter: 'blur(4px)', opacity: 0.7, y: 8 },
+              { filter: 'blur(0px)', opacity: 1, y: 0 }
+            ]}
+          />
+        </h1>
 
         {/* Description */}
         <motion.p 
