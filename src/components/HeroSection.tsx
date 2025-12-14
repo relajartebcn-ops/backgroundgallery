@@ -25,7 +25,7 @@ const HeroSection = () => {
         </motion.div>
 
         {/* Hero Headline */}
-        <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold text-foreground mb-4 leading-snug flex flex-wrap items-baseline justify-center gap-x-[0.3em]">
+        <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold text-foreground mb-2 leading-snug flex flex-wrap items-baseline justify-center gap-x-[0.3em]">
           <BlurText
             text="Ultimate Motion"
             delay={60}
