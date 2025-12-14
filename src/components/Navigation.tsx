@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { ChevronDown } from "lucide-react";
 import { Link } from "react-router-dom";
+import logo from "@/assets/logo.png";
 
 const Navigation = () => {
   return (
@@ -8,11 +9,8 @@ const Navigation = () => {
       <div className="container mx-auto px-6 py-4">
         <div className="flex items-center justify-between">
           {/* Logo */}
-          <Link to="/" className="flex items-center gap-2">
-            <div className="w-8 h-8 bg-neon rounded-md flex items-center justify-center">
-              <div className="w-4 h-4 bg-background rotate-45"></div>
-            </div>
-            <span className="text-xl font-bold text-foreground">Setrex.</span>
+          <Link to="/" className="flex items-center">
+            <img src={logo} alt="Setrex Logo" className="h-6" />
           </Link>
 
           {/* Desktop Navigation */}
