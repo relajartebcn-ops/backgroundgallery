@@ -20,8 +20,8 @@ const HeroSection = () => {
         <h1 
           className="text-5xl md:text-7xl lg:text-8xl font-bold text-foreground mb-6 leading-tight animate-in fade-in slide-in-from-bottom-4 duration-1000 delay-150"
         >
-          Turn your big idea into{" "}
-          <span className="block mt-2">automated success</span>
+          Ultimate Motion{" "}
+          <span className="block mt-2">Background Gallery</span>
         </h1>
 
         {/* Description */}
