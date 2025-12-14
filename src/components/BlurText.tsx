@@ -61,16 +61,16 @@ const BlurText = ({
 
   const defaultFrom = useMemo(
     () =>
-      direction === 'top' ? { filter: 'blur(10px)', opacity: 0, y: -50 } : { filter: 'blur(10px)', opacity: 0, y: 50 },
+      direction === 'top' ? { filter: 'blur(12px)', opacity: 0, y: -30 } : { filter: 'blur(12px)', opacity: 0, y: 30 },
     [direction]
   );
 
   const defaultTo = useMemo(
     () => [
       {
-        filter: 'blur(5px)',
-        opacity: 0.5,
-        y: direction === 'top' ? 5 : -5
+        filter: 'blur(4px)',
+        opacity: 0.7,
+        y: direction === 'top' ? 4 : -4
       },
       { filter: 'blur(0px)', opacity: 1, y: 0 }
     ],
