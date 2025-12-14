@@ -25,7 +25,7 @@ const HeroSection = () => {
         </motion.div>
 
         {/* Hero Headline */}
-        <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold text-foreground mb-4 leading-snug flex flex-wrap items-baseline justify-center gap-x-[0.3em]">
+        <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold text-foreground mb-6 leading-snug flex flex-wrap items-baseline justify-center gap-x-[0.3em]">
           <BlurText
             text="Ultimate Motion"
             delay={60}
@@ -66,7 +66,7 @@ const HeroSection = () => {
           initial={{ opacity: 0, y: 20, filter: "blur(8px)" }}
           animate={{ opacity: 1, y: 0, filter: "blur(0px)" }}
           transition={{ duration: 1, delay: 0.5, ease: smoothEase }}
-          className="text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto mb-8 leading-relaxed"
+          className="text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto mb-12 leading-relaxed"
         >
           Stunning collection of premium motion backgrounds designed to elevate 
           your projects with captivating cinematic visual experiences.
