@@ -12,17 +12,20 @@ const HeroSection = () => {
       {/* Content Overlay */}
       <div className="container mx-auto px-6 py-32 text-center">
         {/* Badge */}
-        <motion.div 
+        <motion.a 
+          href="http://designrocket.io/"
+          target="_blank"
+          rel="noopener noreferrer"
           initial={{ opacity: 0, y: 20, filter: "blur(8px)" }}
           animate={{ opacity: 1, y: 0, filter: "blur(0px)" }}
           transition={{ duration: 1, ease: smoothEase }}
-          className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-muted/50 backdrop-blur-sm border border-border/50 mb-8"
+          className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-muted/50 backdrop-blur-sm border border-border/50 mb-8 hover:bg-muted/70 transition-colors cursor-pointer"
         >
-          <div className="w-2 h-2 rounded-full bg-neon animate-pulse"></div>
           <span className="text-sm text-muted-foreground">
-            Free Premium Motion Backgrounds for Your Projects
+            Learn how to design websites like these
           </span>
-        </motion.div>
+          <ArrowRight className="w-4 h-4 text-muted-foreground" />
+        </motion.a>
 
         {/* Hero Headline */}
         <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold text-foreground mb-2 leading-snug flex flex-col items-center">
