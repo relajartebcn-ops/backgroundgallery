@@ -20,7 +20,7 @@ const HeroSection = () => {
         >
           <div className="w-2 h-2 rounded-full bg-neon animate-pulse"></div>
           <span className="text-sm text-muted-foreground">
-            Discover Premium Cinematic Video Backgrounds
+            Free Premium Motion Backgrounds for Your Projects
           </span>
         </motion.div>
 
@@ -73,8 +73,8 @@ const HeroSection = () => {
           transition={{ duration: 1, delay: 0.5, ease: smoothEase }}
           className="text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto mb-12 leading-relaxed"
         >
-          Stunning collection of premium motion backgrounds designed to elevate 
-          your projects with captivating cinematic visual experiences.
+          A curated collection of stunning motion backgrounds, completely free.
+          Perfect for videos, presentations, and creative projects.
         </motion.p>
 
         {/* CTA Buttons */}
@@ -84,20 +84,32 @@ const HeroSection = () => {
           transition={{ duration: 1, delay: 0.7, ease: smoothEase }}
           className="flex flex-col sm:flex-row items-center justify-center gap-4"
         >
-          <Button 
-            size="lg" 
-            className="bg-neon text-accent-foreground hover:bg-neon-glow neon-glow font-semibold text-lg px-8 py-6 rounded-full transition-all duration-300"
+          <a 
+            href="https://viktoroddy.substack.com/p/5-quick-examples-of-really-good-motion"
+            target="_blank"
+            rel="noopener noreferrer"
           >
-            <ArrowRight className="w-5 h-5 mr-2" />
-            Browse Gallery
-          </Button>
-          <Button 
-            size="lg" 
-            variant="outline"
-            className="border-foreground/20 hover:border-neon hover:text-neon text-foreground font-semibold text-lg px-8 py-6 rounded-full transition-all duration-300"
+            <Button 
+              size="lg" 
+              className="bg-neon text-accent-foreground hover:bg-neon-glow neon-glow font-semibold text-lg px-8 py-6 rounded-full transition-all duration-300"
+            >
+              <ArrowRight className="w-5 h-5 mr-2" />
+              Access Gallery
+            </Button>
+          </a>
+          <a 
+            href="https://x.com/viktoroddy"
+            target="_blank"
+            rel="noopener noreferrer"
           >
-            View Pricing
-          </Button>
+            <Button 
+              size="lg" 
+              variant="outline"
+              className="border-foreground/20 hover:border-neon hover:text-neon text-foreground font-semibold text-lg px-8 py-6 rounded-full transition-all duration-300"
+            >
+              Follow Me on Twitter
+            </Button>
+          </a>
         </motion.div>
 
         {/* Bottom Text */}
@@ -108,7 +120,7 @@ const HeroSection = () => {
           className="mt-32"
         >
           <p className="text-muted-foreground text-sm md:text-base">
-            Partnering with the world's leading enterprises
+            Trusted by creators and designers worldwide
           </p>
         </motion.div>
       </div>
