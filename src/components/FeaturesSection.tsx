@@ -4,23 +4,23 @@ import { Card } from "@/components/ui/card";
 const features = [
   {
     icon: Zap,
-    title: "Lightning Fast Automation",
-    description: "Deploy workflows in minutes, not months. Our AI-powered engine processes tasks 10x faster than traditional solutions."
+    title: "Instant Downloads",
+    description: "Get immediate access to all motion backgrounds. No waiting, no subscriptions – just download and use in your projects."
   },
   {
     icon: Lock,
-    title: "Enterprise Security",
-    description: "Bank-grade encryption and compliance with SOC 2, GDPR, and HIPAA. Your data stays protected at every step."
+    title: "Royalty-Free License",
+    description: "All backgrounds are completely free to use in personal and commercial projects. No attribution required."
   },
   {
     icon: Workflow,
-    title: "Smart Workflow Builder",
-    description: "Drag-and-drop interface with intelligent suggestions. Build complex automations without writing a single line of code."
+    title: "Seamless Integration",
+    description: "Perfectly looping videos in multiple formats. Works with all major video editors and presentation software."
   },
   {
     icon: TrendingUp,
-    title: "Real-Time Analytics",
-    description: "Track performance metrics and ROI with intuitive dashboards. Make data-driven decisions with confidence."
+    title: "Growing Collection",
+    description: "New motion backgrounds added regularly. Follow along to get notified when fresh content drops."
   }
 ];
 
@@ -32,16 +32,16 @@ const FeaturesSection = () => {
         <div className="text-center mb-16 max-w-3xl mx-auto">
           <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-neon/10 border border-neon/20 mb-6">
             <div className="w-2 h-2 rounded-full bg-neon"></div>
-            <span className="text-sm text-neon font-medium">Why Choose Setrex</span>
+            <span className="text-sm text-neon font-medium">Why Use Our Backgrounds</span>
           </div>
           
           <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-foreground mb-6">
-            Powerful Features for Modern Teams
+            Premium Quality, Zero Cost
           </h2>
           
           <p className="text-lg text-muted-foreground leading-relaxed">
-            Everything you need to transform manual processes into intelligent, 
-            automated workflows that scale with your business.
+            Elevate your videos, presentations, and creative projects with 
+            stunning cinematic motion backgrounds – completely free.
           </p>
         </div>
 

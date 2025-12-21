@@ -15,30 +15,40 @@ const Navigation = () => {
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center gap-8">
-            <Link to="/" className="flex items-center gap-1 text-foreground hover:text-neon transition-colors">
-              Home <ChevronDown className="w-4 h-4" />
+            <Link to="/" className="text-foreground hover:text-neon transition-colors">
+              Gallery
             </Link>
-            <Link to="/about" className="text-foreground hover:text-neon transition-colors">
-              About Us
-            </Link>
-            <button className="text-foreground hover:text-neon transition-colors">
-              Features
-            </button>
-            <button className="text-foreground hover:text-neon transition-colors">
-              Pricing
-            </button>
-            <button className="flex items-center gap-1 text-foreground hover:text-neon transition-colors">
-              Pages <ChevronDown className="w-4 h-4" />
-            </button>
+            <a 
+              href="https://viktoroddy.substack.com/p/5-quick-examples-of-really-good-motion" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="text-foreground hover:text-neon transition-colors"
+            >
+              Download
+            </a>
+            <a 
+              href="https://x.com/viktoroddy" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="text-foreground hover:text-neon transition-colors"
+            >
+              Twitter
+            </a>
           </div>
 
           {/* CTA Button */}
-          <Button 
-            variant="outline" 
-            className="hidden md:inline-flex border-foreground/20 hover:border-neon hover:text-neon transition-all"
+          <a 
+            href="https://viktoroddy.substack.com/p/5-quick-examples-of-really-good-motion"
+            target="_blank"
+            rel="noopener noreferrer"
           >
-            Get in Touch
-          </Button>
+            <Button 
+              variant="outline" 
+              className="hidden md:inline-flex border-foreground/20 hover:border-neon hover:text-neon transition-all"
+            >
+              Access Gallery
+            </Button>
+          </a>
 
           {/* Mobile Menu Button */}
           <button className="md:hidden text-foreground">
