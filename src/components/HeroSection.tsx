@@ -109,13 +109,13 @@ const HeroSection = () => {
         ease: smoothEase
       }} className="flex flex-col sm:flex-row items-center justify-center gap-4">
           <a href="https://viktoroddy.substack.com/p/5-quick-examples-of-really-good-motion" target="_blank" rel="noopener noreferrer">
-            <Button size="lg" className="bg-neon text-accent-foreground hover:bg-neon-glow neon-glow font-semibold text-lg px-8 py-6 rounded-full transition-all duration-300">
+            <Button size="lg" className="bg-foreground text-background hover:bg-foreground/90 font-semibold text-lg px-8 py-6 rounded-full transition-all duration-300">
               <ArrowRight className="w-5 h-5 mr-2" />
               Access Gallery
             </Button>
           </a>
           <a href="https://x.com/viktoroddy" target="_blank" rel="noopener noreferrer">
-            <Button size="lg" variant="outline" className="border-foreground/20 hover:border-neon hover:text-neon text-foreground font-semibold text-lg px-8 py-6 rounded-full transition-all duration-300">
+            <Button size="lg" variant="outline" className="border-foreground/20 hover:border-foreground hover:bg-foreground/10 text-foreground font-semibold text-lg px-8 py-6 rounded-full transition-all duration-300">
               Follow Me on Twitter
             </Button>
           </a>
