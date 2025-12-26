@@ -1,5 +1,4 @@
 import './GradientText.css';
-
 interface GradientTextProps {
   children: React.ReactNode;
   className?: string;
@@ -7,7 +6,6 @@ interface GradientTextProps {
   animationSpeed?: number;
   showBorder?: boolean;
 }
-
 const GradientText = ({
   children,
   className = '',
@@ -19,15 +17,11 @@ const GradientText = ({
     backgroundImage: `linear-gradient(to right, ${colors.join(', ')})`,
     animationDuration: `${animationSpeed}s`
   };
-
-  return (
-    <span className={`animated-gradient-text ${className}`}>
+  return <span className={`animated-gradient-text ${className}`}>
       {showBorder && <span className="gradient-overlay" style={gradientStyle}></span>}
-      <span className="text-content" style={gradientStyle}>
+      <span style={gradientStyle} className="text-content text-primary">
         {children}
       </span>
-    </span>
-  );
+    </span>;
 };
-
 export default GradientText;
