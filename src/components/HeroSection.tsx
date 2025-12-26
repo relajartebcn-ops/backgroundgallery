@@ -5,7 +5,7 @@ import BlurText from "./BlurText";
 import GradientText from "./GradientText";
 const smoothEase = [0.25, 0.1, 0.25, 1] as const;
 const HeroSection = () => {
-  return <section className="h-[700px] flex items-center justify-center overflow-hidden pt-24">
+  return <section className="h-[850px] flex items-center justify-center overflow-hidden pt-24">
       {/* Content Overlay */}
       <div className="container mx-auto px-6 py-32 text-center">
         {/* Badge */}
