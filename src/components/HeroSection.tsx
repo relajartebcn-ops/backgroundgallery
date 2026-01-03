@@ -89,7 +89,7 @@ const HeroSection = () => {
         duration: 1,
         delay: 0.5,
         ease: smoothEase
-      }} className="text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto mb-12 leading-relaxed">
+      }} className="text-lg md:text-xl text-foreground/80 max-w-3xl mx-auto mb-12 leading-relaxed">
           A curated collection of stunning motion backgrounds, completely free.
           Perfect for videos, presentations, and creative projects.
         </motion.p>
