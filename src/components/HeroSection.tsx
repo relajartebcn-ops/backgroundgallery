@@ -10,6 +10,18 @@ const HeroSection = () => {
       {/* Content Overlay */}
       <div className="container mx-auto px-6 py-32 text-center">
         {/* Hero Headline */}
+        {/* Blurred black rectangle behind text */}
+        <div
+          className="absolute"
+          style={{
+            width: '400px',
+            height: '200px',
+            backgroundColor: '#000',
+            filter: 'blur(150px)',
+            zIndex: -1
+          }}
+        />
+        
         <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold text-foreground mb-2 leading-snug flex flex-col items-center">
           <span className="flex items-baseline gap-x-[0.3em]">
             <motion.span
