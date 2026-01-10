@@ -35,15 +35,13 @@ const Index = () => {
           muted
           playsInline
           src="/videos/recap-2025.mp4"
-          className="w-full h-full object-cover transition-opacity duration-300"
+          className="w-full h-full object-cover"
           style={{ 
-            mixBlendMode: 'hard-light',
             position: 'absolute',
             top: 0,
             left: 0,
             width: '100%',
-            height: '100%',
-            filter: 'brightness(0.7) contrast(2)'
+            height: '100%'
           }}
         />
       </div>
