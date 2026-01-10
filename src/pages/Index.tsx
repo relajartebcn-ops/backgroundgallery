@@ -1,28 +1,8 @@
-import Navigation from "@/components/Navigation";
 import HeroSection from "@/components/HeroSection";
-import VideoCardsSection from "@/components/VideoCardsSection";
-import FeaturesSection from "@/components/FeaturesSection";
 import { useEffect, useRef } from "react";
-import Hls from "hls.js";
 
 const Index = () => {
   const videoRef = useRef<HTMLVideoElement>(null);
-
-  useEffect(() => {
-    const video = videoRef.current;
-    if (!video) return;
-
-    const hlsUrl = "https://customer-cbeadsgr09pnsezs.cloudflarestream.com/04c4b640a3098538bb75404089025993/manifest/video.m3u8";
-
-    if (Hls.isSupported()) {
-      const hls = new Hls();
-      hls.loadSource(hlsUrl);
-      hls.attachMedia(video);
-      return () => hls.destroy();
-    } else if (video.canPlayType("application/vnd.apple.mpegurl")) {
-      video.src = hlsUrl;
-    }
-  }, []);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -54,6 +34,7 @@ const Index = () => {
           loop
           muted
           playsInline
+          src="/videos/recap-2025.mp4"
           className="w-full h-full object-cover transition-opacity duration-300"
           style={{ 
             mixBlendMode: 'hard-light',
@@ -67,16 +48,9 @@ const Index = () => {
         />
       </div>
 
-      {/* Navbar overlays video */}
-      <div style={{ position: 'relative', zIndex: 50 }}>
-        <Navigation />
-      </div>
-
       {/* Hero content */}
       <div style={{ position: 'relative', zIndex: 10 }}>
         <HeroSection />
-        <VideoCardsSection />
-        <FeaturesSection />
       </div>
     </div>
   );
