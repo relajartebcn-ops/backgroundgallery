@@ -17,7 +17,7 @@ const HeroSection = () => {
             width: '400px',
             height: '200px',
             backgroundColor: '#000',
-            filter: 'blur(150px)',
+            filter: 'blur(50px)',
             zIndex: -1
           }}
         />
